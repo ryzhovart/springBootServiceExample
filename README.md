@@ -6,3 +6,5 @@ for getting message in fr locale add header Accept-Language:fr
 
 for versioning by header - add header X-API-VERSION:1
 for versioning by media-type - add header Accept:application/vnd.company.app-v2+json
+
+actuator path: /actuator
