@@ -8,10 +8,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -35,7 +33,7 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     @JsonIgnore
-    private List<UserPost> posts;
+    private List<Post> posts;
 
     public User(Long id, String name, LocalDate birthDate) {
         this.id = id;
